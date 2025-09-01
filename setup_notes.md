@@ -18,4 +18,9 @@ rename .github/workflows/gh-pages.yml.sample to gh-pages.yml
 Go to the repository’s Settings on GitHub.
 In the GitHub Pages section change:
     Source: Deploy from a branch
-    Branch: gh-pages/[main](root)
+    Branch: gh-pages/(root)
+
+package.json scripts section
+"scripts": {
+  "build-ghpages": "npx @11ty/eleventy --pathprefix=/blog-tech/",
+}
