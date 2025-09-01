@@ -30,6 +30,7 @@ export default async function (eleventyConfig) {
 			"./public/": "/",
 		})
 		.addPassthroughCopy("CNAME")
+		.addPassthroughCopy("favicon.ico")
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	// Run Eleventy when these files change:
@@ -71,7 +72,7 @@ export default async function (eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Some notes by Jallal",
+			title: "Some notes...",
 			subtitle:
 				"A personal log of thoughts, notes and perspectives related to IT.",
 			base: "https://blog.jallalbrahimi.com/",

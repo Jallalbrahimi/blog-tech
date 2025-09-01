@@ -1,5 +1,5 @@
 export default {
-	title: "Some notes by Jallal",
+	title: "Some notes...",
 	url: "https://blog.jallalbrahimi.com/",
 	language: "en",
 	description:
