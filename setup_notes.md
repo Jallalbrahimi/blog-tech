@@ -24,3 +24,23 @@ package.json scripts section
 "scripts": {
   "build-ghpages": "npx @11ty/eleventy --pathprefix=/blog-tech/",
 }
+
+
+Add a CNAME file to the root directory (may be automatically created by GITHUB after custom domain setup) and update eleventy.config.js to copy it 
+ eleventyConfig
+  .[...]
+  .addPassthroughCopy("CNAME")
+
+
+CSS
+
+base.njk
+<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
+
+ // Per-page bundles, see <https://github.com/11ty/eleventy-plugin-bundle>
+ // Bundle <style> content and adds a {% css %} paired shortcode
+ eleventyConfig.addBundle("css");
+
+ // Bundle <script> content and adds a {% js %} paired shortcode
+ eleventyConfig.addBundle("js");
