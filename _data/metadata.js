@@ -3,7 +3,7 @@ export default {
 	url: "https://blog.jallalbrahimi.com/",
 	language: "en",
 	description:
-		"“A personal log of thoughts, notes and perspectives related to IT. Mostly so I don't forget them.",
+		"A personal log of thoughts, notes and perspectives related to IT. Mostly so I don't forget them.",
 	author: {
 		name: "Jallal",
 		email: "pro_at_jallalbrahimi.com",
