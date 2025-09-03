@@ -31,6 +31,7 @@ export default async function (eleventyConfig) {
 		})
 		.addPassthroughCopy("CNAME")
 		.addPassthroughCopy("favicon.ico")
+		.addPassthroughCopy("robots.txt")
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	// Run Eleventy when these files change:
